@@ -1,0 +1,35 @@
+== module: squid
+
+Manages squid server.
+
+Have a look at the main module class (<tt>init.pp</tt>) to see what this
+module does on a node plus usage examples.
+
+
+=== Compatibility
+
+This module is designed to work with Puppet version 2.7.x or newer.
+
+
+=== Requirements
+
+This module has got the following module dependencies:
+
+[*stdlib*]
+  Version 2.3.1 or newer. Standard library of useful resources by Puppet Labs.
+  It provides functions like <tt>validate_*()</tt>, <tt>is_*()</tt> and
+  <tt>empty()</tt>. More information:
+  * {stdlib at Puppet Forge}[http://forge.puppetlabs.com/puppetlabs/stdlib]
+  * The {module source code}[http://j.mp/w00GZr] to get a listing of available
+    functions.
+
+[*puppi*]
+  It provides functions like <tt>params_lookup()</tt> and <tt>options_lookup()</tt>.
+  More information:
+  * The {module source code}[https://github.com/example42/puppi]
+
+
+=== License, Copyright
+
+See COPYING and NOTICE file in the root directory of this module.
+

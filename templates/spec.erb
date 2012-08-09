@@ -1,0 +1,12 @@
+# This is a template used only for rspec tests
+
+# Custom Options
+<%= scope.function_options_lookup(['opt_a', 'value_a']) %>
+
+# acl_src 
+<% if scope.lookupvar('squid::acl_src').length > 0 then -%>
+<% scope.lookupvar('squid::acl_src').sort_by {|k, v| k}.each do |k, v| -%>
+acl <%= k %><% if v != "" %> src <%= v %><% end %>
+<% end -%>
+<% end -%>
+
